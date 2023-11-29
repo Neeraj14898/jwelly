@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <style>
+      /* body{display: flex;align-items: center;min-height: 96vh;} */
+      .form {
+        display: flex;
+        height: 400px;
+        width: 700px;
+        max-width: 90%;
+        border-radius: 8px;
+        box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.15);
+        font-family: sans-serif;
+        overflow: hidden;
+        margin: 50px auto;
+      }
+      .form input {
+        padding: 10px;
+        color: #555;
+        border: 2px solid #ddd;
+        outline: none;
+        font-size: 16px;
+        width: 100%;
+      }
+      .form input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+      }
+      .form input:focus {
+        border-color: blue;
+      }
+      .form img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .form button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background: blue;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+      }
+      .form label {
+        position: relative;
+        margin-bottom: 17px;
+      }
+      .form label:has(input:focus, input:not(:placeholder-shown)):before {
+        top: -22%;
+        background: #fff;
+        z-index: 1;
+        padding: 0 5px;
+        transform: none;
+        color: #888;
+      }
+      .form label:has(input:focus)::before {
+        color: blue;
+      }
+      .form input::placeholder {
+        opacity: 0;
+      }
+      .form label::before {
+        color: #ccc;
+        content: attr(for);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        pointer-events: none;
+        transition: all 0.3s;
+      }
+      .form h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      .form form {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      @media (max-width: 767px) {
+        .form img {
+          display: none;
+        }
+        .form {
+          justify-content: center;
+          width: unset;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="/" class="brand"> Jwelly </a>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="./shop.html">Shop</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="form">
+      <img alt="register" src="./img/Silver Payal.jpg" />
+      <form>
+        <h2>Contact Us</h2>
+        <label for="name">
+          <input placeholder="Name" id="name" type="text" />
+        </label>
+        <label for="email">
+          <input autofocus placeholder="Email" id="email" type="text" />
+        </label>
+
+        <label for="mobile">
+          <input placeholder="Mobile" id="mobile" type="tel" />
+        </label>
+        <button>Submit</button>
+      </form>
+    </div>
+    <footer>
+        <div class="col">
+          <h3>Jwelly</h3>
+          <p>
+            Your one stop destination for<br />
+            original Jwellery
+          </p>
+        </div>
+        <div class="col">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./contact.html">contact</a></li>
+            <li><a href="./shop.html">shop</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Days opened</h3>
+          <ul>
+            <li>Sunday 9am - 9pm</li>
+            <li>Monday 9am - 9pm</li>
+            <li>tuesday 9am - 9pm</li>
+            <li>wednesday 9am - 9pm</li>
+            <li>Thursday 9am - 9pm</li>
+            <li>Friday 9am - 9pm</li>
+            <li>Saturday 9am - 9pm</li>
+          </ul>
+        </div>
+      </footer>
+  </body>
+</html>
